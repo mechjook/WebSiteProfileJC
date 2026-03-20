@@ -1,0 +1,11 @@
+node_modules
+dist
+dist-portable
+*.zip
+*.tar.gz
+.env
+.env.local
+.env.production
+*.log
+.DS_Store
+.vscode

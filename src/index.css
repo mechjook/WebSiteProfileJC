@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0a0e1a;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1b2542;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #253052;
+  }
+
+  ::selection {
+    background: rgba(56, 189, 248, 0.2);
+    color: #e2e8f0;
+  }
+
+  /* Focus visible para navegación con teclado */
+  *:focus-visible {
+    outline: 2px solid rgba(56, 189, 248, 0.6);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-accent-400 to-blue-400;
+  }
+
+  .glow {
+    box-shadow: 0 0 40px rgba(56, 189, 248, 0.08), 0 0 80px rgba(56, 189, 248, 0.04);
+  }
+
+  .glow-sm {
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.06);
+  }
+
+  .card-base {
+    @apply bg-navy-800/60 backdrop-blur-sm border border-navy-600/40 rounded-2xl;
+  }
+
+  .section-padding {
+    @apply py-24 md:py-32 px-4 sm:px-6 lg:px-8;
+  }
+}
+
+/* Print styles */
+@media print {
+  body {
+    background: white !important;
+    color: #1a1a1a !important;
+  }
+
+  nav, .back-to-top {
+    display: none !important;
+  }
+
+  section {
+    padding: 1rem 0 !important;
+    page-break-inside: avoid;
+  }
+
+  * {
+    background: transparent !important;
+    border-color: #ddd !important;
+    color: #1a1a1a !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a {
+    text-decoration: underline !important;
+  }
+
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #666 !important;
+  }
+}
