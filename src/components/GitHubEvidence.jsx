@@ -58,7 +58,7 @@ export default function GitHubEvidence() {
                 {repo.description}
               </p>
 
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 items-center">
                 {repo.technologies.map((tech) => (
                   <span
                     key={tech}
@@ -67,6 +67,16 @@ export default function GitHubEvidence() {
                     {tech}
                   </span>
                 ))}
+                {repo.link && (
+                  <a
+                    href={repo.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="ml-auto px-3 py-1 text-xs font-semibold text-emerald-400 bg-emerald-400/10 border border-emerald-400/20 rounded-md hover:bg-emerald-400/20 transition-all duration-200"
+                  >
+                    Ver Demo →
+                  </a>
+                )}
               </div>
             </motion.div>
           ))}

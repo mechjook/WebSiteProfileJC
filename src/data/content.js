@@ -101,6 +101,16 @@ export const PROJECTS = [
       'Detección automática de inconsistencias que antes pasaban desapercibidas. Trazabilidad completa del proceso de conciliación.',
   },
   {
+    title: 'ETL Conciliación Bancaria — Dashboard Interactivo',
+    problem:
+      'La conciliación entre registros contables y extractos bancarios requería cruces manuales entre archivos con formatos distintos (encoding, delimitadores, formatos de fecha y montos), sin visibilidad consolidada de diferencias ni análisis estadístico.',
+    solution:
+      'Construí un pipeline ETL completo en Python con 7 etapas automatizadas: generación de datos sintéticos, validación de estructura, extracción con detección automática de encoding, normalización, match por código de operación, reportes CSV y dashboard HTML interactivo con Chart.js. Incluye CI/CD con GitHub Actions que ejecuta tests, corre el pipeline y publica el dashboard en GitHub Pages.',
+    technologies: ['Python', 'pandas', 'matplotlib', 'Chart.js', 'GitHub Actions', 'GitHub Pages', 'pytest'],
+    impact:
+      'Pipeline ejecuta en menos de 2 segundos. Dashboard interactivo con gráficos, tablas filtrables/ordenables, búsqueda en tiempo real y navegación por secciones. 17 tests automatizados. Deploy continuo a GitHub Pages.',
+  },
+  {
     title: 'Herramientas internas de productividad',
     problem:
       'Equipos operativos dedicaban tiempo significativo a tareas repetitivas que podían estandarizarse y automatizarse con herramientas simples.',
@@ -166,6 +176,12 @@ export const GITHUB_REPOS = [
     name: 'Proyecto_piloto_contable',
     description: 'Flujo maestro de 7 etapas para validación y consolidación diaria de subsidiarios contables.',
     technologies: ['Python', 'SQLAlchemy', 'openpyxl'],
+  },
+  {
+    name: 'DemostrationETL',
+    description: 'Pipeline ETL de conciliación bancaria con dashboard interactivo Chart.js y deploy automático a GitHub Pages.',
+    technologies: ['Python', 'pandas', 'Chart.js', 'GitHub Actions'],
+    link: 'https://mechjook.github.io/DemostrationETL/',
   },
   {
     name: 'Robocorp_Auto_SII-F29_Scrap',
