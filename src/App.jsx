@@ -2,11 +2,10 @@ import ErrorBoundary from './components/ErrorBoundary'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
-import ValueProposition from './components/ValueProposition'
-import Experience from './components/Experience'
 import Stack from './components/Stack'
-import Strengths from './components/Strengths'
 import Projects from './components/Projects'
+import Impact from './components/Impact'
+import GitHubEvidence from './components/GitHubEvidence'
 import Methodology from './components/Methodology'
 import Education from './components/Education'
 import Vision from './components/Vision'
@@ -22,11 +21,10 @@ export default function App() {
         <main>
           <Hero />
           <About />
-          <ValueProposition />
-          <Experience />
           <Stack />
-          <Strengths />
           <Projects />
+          <Impact />
+          <GitHubEvidence />
           <Methodology />
           <Education />
           <Vision />

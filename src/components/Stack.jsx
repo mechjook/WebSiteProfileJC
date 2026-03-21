@@ -4,12 +4,10 @@ import SectionTitle from './SectionTitle'
 import { STACK } from '../data/content'
 
 const categoryColors = {
-  'Automatización & RPA': '#06b6d4',
-  'Desarrollo': '#22d3ee',
-  'Datos & Bases de datos': '#67e8f9',
-  'Archivos & Procesamiento': '#a5f3fc',
-  'Herramientas & DevOps': '#0891b2',
-  'Integración': '#0e7490',
+  'Automatización': '#06b6d4',
+  'Lenguajes': '#22d3ee',
+  'Datos e integración': '#67e8f9',
+  'Dev / Herramientas': '#0891b2',
 }
 
 export default function Stack() {

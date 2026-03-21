@@ -1,11 +1,10 @@
 export const NAV_LINKS = [
   { label: 'Inicio', href: '#hero' },
   { label: 'Sobre mí', href: '#about' },
-  { label: 'Propuesta', href: '#value' },
-  { label: 'Experiencia', href: '#experience' },
   { label: 'Stack', href: '#stack' },
-  { label: 'Fortalezas', href: '#strengths' },
   { label: 'Proyectos', href: '#projects' },
+  { label: 'Impacto', href: '#impact' },
+  { label: 'GitHub', href: '#github' },
   { label: 'Metodología', href: '#methodology' },
   { label: 'Formación', href: '#education' },
   { label: 'Visión', href: '#vision' },
@@ -14,180 +13,164 @@ export const NAV_LINKS = [
 
 export const HERO = {
   name: 'José Nicolás Candia',
-  title: 'Desarrollador de Automatización y Soluciones Tecnológicas',
+  title: 'Automation Developer | RPA, Python, ETL & Process Optimization',
   subtitles: [
-    'Automation Developer',
-    'RPA Developer',
-    'Python Developer',
-    'Especialista en Datos y Control Operacional',
+    'Reduzco horas manuales con automatización inteligente',
+    'Conecto datos, procesos y tecnología en soluciones robustas',
+    'Transformo operaciones manuales en flujos auditables',
+    'Construyo herramientas que la operación necesita',
   ],
-  tagline: 'Diseño soluciones, no solo automatizaciones aisladas.',
+  tagline: 'Diseño soluciones que eliminan trabajo manual, reducen errores y escalan con el negocio.',
   description:
-    'Combino automatización, desarrollo, datos y criterio técnico para transformar procesos complejos en soluciones robustas, mantenibles y de impacto real — especialmente en entornos financieros, contables y operacionales.',
+    'Automatizo procesos críticos, integro fuentes de datos y construyo herramientas internas que generan impacto real — con foco en eficiencia, trazabilidad y robustez operativa.',
 }
 
 export const ABOUT = {
-  paragraphs: [
-    'Soy un profesional enfocado en automatización de procesos, desarrollo de herramientas internas y soluciones orientadas a la operación. Mi trabajo va más allá de ejecutar tareas repetitivas: diseño soluciones técnicas que conectan reglas de negocio, validaciones, trazabilidad y control operacional en un flujo coherente.',
-    'He desarrollado pipelines ETL completos, bots de extracción tributaria, orquestadores de procesos contables y herramientas de conciliación de datos — siempre con foco en robustez, reanudación automática y separación entre entornos QA y Producción. Mi dominio del sector financiero-contable me permite entender tanto el código como las reglas del negocio.',
-    'Antes de actuar, analizo. Entiendo el proceso, identifico riesgos, evalúo dependencias y recién entonces diseño la solución. Cuando tengo claridad, ejecuto con decisión y compromiso. No busco lo rápido, busco lo correcto — y cuando ambos coinciden, es donde genero mayor valor.',
+  summary:
+    'Soy un desarrollador especializado en automatización de procesos, integración de datos y construcción de herramientas operativas. Mi trabajo se centra en resolver problemas reales: eliminar tareas manuales repetitivas, reducir errores en procesos críticos y crear soluciones que conecten reglas de negocio con ejecución técnica.',
+  highlights: [
+    {
+      title: 'Resuelvo problemas de operación',
+      description:
+        'Identifico cuellos de botella, procesos frágiles y tareas repetitivas. Diseño automatizaciones que los eliminan de raíz, no parches temporales.',
+    },
+    {
+      title: 'Combino negocio y tecnología',
+      description:
+        'Entiendo las reglas contables, tributarias y financieras antes de escribir código. Eso me permite construir soluciones que realmente calzan con la operación.',
+    },
+    {
+      title: 'Construyo para que dure',
+      description:
+        'Mis soluciones incluyen validaciones, manejo de errores, trazabilidad y reanudación automática. No solo funcionan — son mantenibles, auditables y resilientes.',
+    },
+    {
+      title: 'Aprendo rápido, ejecuto con criterio',
+      description:
+        'Analizo antes de actuar. Cuando tengo claridad, ejecuto con decisión. Me adapto a herramientas nuevas, contextos distintos y presión operativa.',
+    },
   ],
 }
 
-export const VALUE_PROPS = [
-  {
-    title: 'Procesos manuales a soluciones robustas',
-    description:
-      'Transformo operaciones manuales y repetitivas en flujos automatizados con validaciones, manejo de errores, evidencia de ejecución y reanudación automática.',
-    icon: 'cog',
-  },
-  {
-    title: 'Reducción de errores operativos',
-    description:
-      'Implemento capas de validación, reglas de negocio y controles que eliminan la variabilidad humana en procesos críticos como conciliaciones y certificaciones contables.',
-    icon: 'shield',
-  },
-  {
-    title: 'Automatizaciones mantenibles',
-    description:
-      'Construyo soluciones con arquitectura clara, separación de responsabilidades, orquestación por etapas y documentación que permite evolución y soporte a largo plazo.',
-    icon: 'layers',
-  },
-  {
-    title: 'Trazabilidad y control',
-    description:
-      'Integro logging, evidencia, reportería y monitoreo para que cada ejecución sea observable, auditable y medible.',
-    icon: 'eye',
-  },
-  {
-    title: 'Negocio conectado con tecnología',
-    description:
-      'Traduzco necesidades operativas en lógica técnica. Conecto reglas contables, tributarias y financieras con la ejecución automatizada de forma precisa.',
-    icon: 'link',
-  },
-  {
-    title: 'Rapidez con orden técnico',
-    description:
-      'Entrego soluciones funcionales en plazos reales sin sacrificar calidad, estructura ni buenas prácticas de desarrollo.',
-    icon: 'zap',
-  },
-]
-
-export const EXPERIENCE_AREAS = [
-  {
-    area: 'Automatización RPA',
-    description:
-      'Diseño y desarrollo de automatizaciones con UiPath, Robocorp y Selenium, integrando validaciones, manejo de excepciones, trazabilidad y separación entre entornos QA y Producción.',
-  },
-  {
-    area: 'Desarrollo Python',
-    description:
-      'Construcción de herramientas internas, pipelines ETL, automatización web, procesamiento de datos y utilidades operativas con pandas, openpyxl, SQLAlchemy y Selenium.',
-  },
-  {
-    area: 'Datos, SQL y ETL',
-    description:
-      'Consultas avanzadas en PostgreSQL y SQL Server, transformación de datos, conciliaciones contables, cruces entre fuentes y preparación de información para operación y reportería.',
-  },
-  {
-    area: 'Dominio financiero y contable',
-    description:
-      'Automatización de procesos tributarios (SII, F29), validaciones contables, consolidación de subsidiarios, cuadraturas y certificación — con entendimiento profundo de las reglas de negocio.',
-  },
-  {
-    area: 'Integración entre sistemas',
-    description:
-      'Conexión de plataformas, bases de datos, APIs, Google Sheets, Excel COM y archivos para crear flujos de información consistentes entre sistemas heterogéneos.',
-  },
-  {
-    area: 'Control operacional',
-    description:
-      'Implementación de orquestadores, reanudación automática, control de estados, evidencia de ejecución y métricas que permiten supervisar y auditar procesos automatizados.',
-  },
-]
-
 export const STACK = {
-  'Automatización & RPA': ['UiPath', 'Selenium', 'Robocorp', 'Playwright'],
-  'Desarrollo': ['Python', 'JavaScript', 'APIs REST', 'Regex'],
-  'Datos & ETL': ['pandas', 'openpyxl', 'SQLAlchemy', 'numpy'],
-  'Bases de datos': ['PostgreSQL', 'SQL Server', 'PLpgSQL', 'TSQL'],
-  'Archivos & Procesamiento': ['Excel Avanzado', 'CSV', 'PDF', 'Google Sheets'],
-  'Herramientas & DevOps': ['Git', 'GitHub', 'Docker', 'PyInstaller'],
+  'Automatización': ['UiPath', 'Selenium', 'Robocorp', 'Playwright', 'Power Automate'],
+  'Lenguajes': ['Python', 'JavaScript', 'SQL', 'Regex'],
+  'Datos e integración': ['pandas', 'openpyxl', 'SQLAlchemy', 'PostgreSQL', 'SQL Server', 'Athena', 'APIs REST'],
+  'Dev / Herramientas': ['Git', 'GitHub', 'Docker', 'GitHub Actions', 'PyInstaller', 'Excel Avanzado'],
 }
-
-export const STRENGTHS = [
-  {
-    title: 'Automatización de procesos con UiPath',
-    description: 'Flujos robustos con validaciones, evidencia, manejo de errores y separación QA/Producción para procesos críticos.',
-  },
-  {
-    title: 'Desarrollo de herramientas con Python',
-    description: 'Pipelines ETL, utilidades, GUIs y aplicaciones internas que resuelven problemas reales de operación.',
-  },
-  {
-    title: 'SQL avanzado y manejo de datos',
-    description: 'Consultas complejas en PostgreSQL y SQL Server, transformaciones, cruces contables y esquemas de clasificación.',
-  },
-  {
-    title: 'ETL y transformación de información',
-    description: 'Pipelines de extracción, limpieza y carga de datos con pandas, openpyxl y SQLAlchemy orientados a calidad y consistencia.',
-  },
-  {
-    title: 'Web scraping avanzado',
-    description: 'Extracción de datos desde portales complejos con Selenium y Playwright, incluyendo manejo de login, modales y navegación dinámica.',
-  },
-  {
-    title: 'Validación y reglas de negocio',
-    description: 'Implementación de controles que aseguran integridad, consistencia y cumplimiento de reglas contables y operativas.',
-  },
-  {
-    title: 'Integración entre sistemas',
-    description: 'Conexión fluida entre PostgreSQL, Excel COM, Google Sheets, APIs y archivos para crear ecosistemas funcionales.',
-  },
-  {
-    title: 'Monitoreo y trazabilidad',
-    description: 'Observabilidad completa del ciclo de ejecución con logging, control de estados, evidencia y reanudación automática.',
-  },
-  {
-    title: 'Herramientas internas y distribución',
-    description: 'Construcción de utilidades con GUI (tkinter) y generación de portables (.exe) para distribución a usuarios finales.',
-  },
-  {
-    title: 'Robustez operativa',
-    description: 'Soluciones con orquestación, reanudación automática, manejo de excepciones y separación de entornos para continuidad operativa.',
-  },
-]
 
 export const PROJECTS = [
   {
-    title: 'Bot RPA de extracción tributaria',
-    description:
-      'Automatización completa de consulta del Formulario 29 (F29) desde el portal del SII para múltiples contribuyentes, con GUI, reanudación automática, reportería en Excel y generación de portable.',
-    tags: ['Python', 'Selenium', 'tkinter', 'Excel', 'PyInstaller'],
+    title: 'Bot RPA de extracción tributaria (SII F29)',
+    problem:
+      'La consulta mensual del Formulario 29 para decenas de contribuyentes se hacía manualmente en el portal del SII, consumiendo horas de trabajo y generando errores frecuentes.',
+    solution:
+      'Desarrollé un bot en Python con Selenium que automatiza el login, navegación, extracción de códigos tributarios y escritura de resultados en Excel. Incluye GUI, reanudación automática y generación de portable .exe para usuarios finales.',
+    technologies: ['Python', 'Selenium', 'tkinter', 'openpyxl', 'PyInstaller'],
+    impact:
+      'Proceso que tomaba un día completo de trabajo manual ahora se ejecuta de forma desatendida. Eliminación de errores de transcripción y trazabilidad completa de cada ejecución.',
   },
   {
     title: 'Pipeline ETL de contabilidad automática',
-    description:
-      'Procesamiento masivo de datos de producción para generar contabilidad automática. Orquestación de múltiples módulos ETL, comparadores contables y conciliación entre subsidiarios.',
-    tags: ['Python', 'PostgreSQL', 'pandas', 'SQL', 'Orquestación'],
+    problem:
+      'La generación de contabilidad a partir de datos de producción requería procesamiento manual de múltiples fuentes, cruces complejos y era propenso a inconsistencias.',
+    solution:
+      'Construí un sistema orquestado con múltiples módulos ETL en Python que procesa datos masivos, ejecuta comparadores contables, cruza subsidiarios y genera consolidados automáticos contra PostgreSQL.',
+    technologies: ['Python', 'PostgreSQL', 'pandas', 'PLpgSQL', 'Jupyter'],
+    impact:
+      'Automatización completa de un proceso contable crítico. Reducción significativa de tiempo de procesamiento y detección temprana de inconsistencias entre fuentes.',
   },
   {
-    title: 'Consolidación y validación contable',
-    description:
-      'Flujo maestro de 7 etapas para validación de subsidiarios: archivado, preparación, inserción, enriquecimiento, cruce TXP, cuadratura y consolidación diaria contra PostgreSQL.',
-    tags: ['Python', 'SQLAlchemy', 'openpyxl', 'PostgreSQL', 'ETL'],
+    title: 'Consolidación y validación de subsidiarios',
+    problem:
+      'La validación diaria de subsidiarios contables requería cruzar múltiples archivos, aplicar reglas de clasificación y consolidar resultados — todo manualmente.',
+    solution:
+      'Diseñé un flujo maestro de 7 etapas: archivado, preparación, inserción, enriquecimiento con cuentas/eventos, cruce TXP, cuadratura MCF y consolidación histórica. Orquestado con flags de ejecución y rutas alternativas.',
+    technologies: ['Python', 'SQLAlchemy', 'openpyxl', 'PostgreSQL', 'Excel COM'],
+    impact:
+      'Proceso diario que antes tomaba horas de trabajo manual ahora se ejecuta con un solo comando. Cuadraturas automáticas y consolidación histórica sin intervención.',
   },
   {
-    title: 'Soluciones de conciliación de datos',
-    description:
-      'Cruce de múltiples fuentes de información financiera para detectar diferencias, inconsistencias y desvíos críticos en la operación contable.',
-    tags: ['SQL', 'Python', 'Conciliación', 'Control'],
+    title: 'Sistema de conciliación de datos financieros',
+    problem:
+      'La operación necesitaba cruzar información de múltiples fuentes financieras para detectar diferencias, pero el proceso era lento, manual y difícil de auditar.',
+    solution:
+      'Implementé soluciones de cruce automatizado entre bases de datos, archivos Excel y reportes, con reglas de validación específicas y generación de reportes de diferencias.',
+    technologies: ['SQL', 'Python', 'PostgreSQL', 'pandas'],
+    impact:
+      'Detección automática de inconsistencias que antes pasaban desapercibidas. Trazabilidad completa del proceso de conciliación.',
   },
   {
-    title: 'Herramientas internas para productividad',
+    title: 'Herramientas internas de productividad',
+    problem:
+      'Equipos operativos dedicaban tiempo significativo a tareas repetitivas que podían estandarizarse y automatizarse con herramientas simples.',
+    solution:
+      'Desarrollé utilidades en Python y JavaScript para procesamiento de archivos, traducción de documentos, análisis de datos y estandarización de tareas operativas recurrentes.',
+    technologies: ['Python', 'JavaScript', 'APIs', 'Google Sheets'],
+    impact:
+      'Reducción de tiempos en tareas rutinarias y estandarización de procesos que antes dependían de criterio individual.',
+  },
+]
+
+export const IMPACT_METRICS = [
+  {
+    metric: 'Procesos manuales eliminados',
     description:
-      'Aplicaciones y utilidades orientadas a reducir tiempos, estandarizar tareas y facilitar el análisis técnico — incluyendo traductor de documentos y herramientas de procesamiento.',
-    tags: ['Python', 'JavaScript', 'Herramientas', 'Productividad'],
+      'Automatización de flujos completos que antes requerían horas de trabajo manual diario — desde extracción tributaria hasta consolidación contable.',
+    icon: 'cog',
+  },
+  {
+    metric: 'Errores operativos reducidos',
+    description:
+      'Implementación de validaciones, reglas de negocio y controles automáticos que eliminan la variabilidad humana en procesos críticos.',
+    icon: 'shield',
+  },
+  {
+    metric: 'Trazabilidad completa',
+    description:
+      'Cada automatización incluye logging, evidencia de ejecución, control de estados y reanudación automática — auditable de principio a fin.',
+    icon: 'eye',
+  },
+  {
+    metric: 'Tiempo de procesamiento optimizado',
+    description:
+      'Procesos contables y de datos que tomaban un día completo ahora se ejecutan en minutos de forma desatendida.',
+    icon: 'zap',
+  },
+  {
+    metric: 'Integración de fuentes heterogéneas',
+    description:
+      'Conexión de PostgreSQL, SQL Server, Excel, Google Sheets, APIs y archivos planos en flujos unificados y consistentes.',
+    icon: 'link',
+  },
+  {
+    metric: 'Herramientas para usuarios finales',
+    description:
+      'Construcción de utilidades con GUI y portables .exe que permiten a equipos no técnicos beneficiarse de la automatización.',
+    icon: 'layers',
+  },
+]
+
+export const GITHUB_REPOS = [
+  {
+    name: 'ExtractorSII-F29',
+    description: 'Bot RPA que automatiza la extracción del Formulario 29 desde el portal del SII para múltiples contribuyentes.',
+    technologies: ['Python', 'Selenium', 'tkinter'],
+  },
+  {
+    name: 'Prod_ContableBECH',
+    description: 'Pipeline ETL para procesamiento masivo de datos de producción y generación de contabilidad automática.',
+    technologies: ['Python', 'PostgreSQL', 'PLpgSQL'],
+  },
+  {
+    name: 'Proyecto_piloto_contable',
+    description: 'Flujo maestro de 7 etapas para validación y consolidación diaria de subsidiarios contables.',
+    technologies: ['Python', 'SQLAlchemy', 'openpyxl'],
+  },
+  {
+    name: 'Robocorp_Auto_SII-F29_Scrap',
+    description: 'Scraping tributario con framework Robocorp y almacenamiento en Google Sheets/Drive.',
+    technologies: ['Python', 'Playwright', 'Google APIs'],
   },
 ]
 
@@ -221,39 +204,6 @@ export const METHODOLOGY_STEPS = [
     step: '06',
     title: 'Entrega y mejora',
     description: 'Despliegue con monitoreo, recolección de feedback y ciclo de mejora continua.',
-  },
-]
-
-export const VISION_ITEMS = [
-  {
-    title: 'Arquitectura de Soluciones',
-    description:
-      'Diseñar ecosistemas de automatización completos que conecten procesos, datos y tecnología a nivel organizacional.',
-  },
-  {
-    title: 'Liderazgo Técnico',
-    description:
-      'Guiar equipos de desarrollo y automatización con criterio técnico, buenas prácticas y visión de largo plazo.',
-  },
-  {
-    title: 'Automatización Inteligente',
-    description:
-      'Incorporar IA aplicada, clasificación de documentos y agentes técnicos para llevar la automatización al siguiente nivel.',
-  },
-  {
-    title: 'Gestión de Proyectos',
-    description:
-      'Liderar iniciativas tecnológicas de punta a punta, conectando negocio, operación y tecnología de forma efectiva.',
-  },
-  {
-    title: 'Observabilidad avanzada',
-    description:
-      'Evolucionar los patrones de monitoreo y orquestación actuales hacia observabilidad completa con métricas, alertas y dashboards.',
-  },
-  {
-    title: 'Soluciones de Alto Impacto',
-    description:
-      'Construir herramientas que transformen la operación, generen métricas reales y escalen con el crecimiento del negocio.',
   },
 ]
 
@@ -303,10 +253,43 @@ export const CERTIFICATIONS = [
   'Nivelación para Red Team',
 ]
 
+export const VISION_ITEMS = [
+  {
+    title: 'Arquitectura de Soluciones',
+    description:
+      'Diseñar ecosistemas de automatización completos que conecten procesos, datos y tecnología a nivel organizacional.',
+  },
+  {
+    title: 'Liderazgo Técnico',
+    description:
+      'Guiar equipos de desarrollo y automatización con criterio técnico, buenas prácticas y visión de largo plazo.',
+  },
+  {
+    title: 'Automatización Inteligente',
+    description:
+      'Incorporar IA aplicada, clasificación de documentos y agentes técnicos para llevar la automatización al siguiente nivel.',
+  },
+  {
+    title: 'Gestión de Proyectos',
+    description:
+      'Liderar iniciativas tecnológicas de punta a punta, conectando negocio, operación y tecnología de forma efectiva.',
+  },
+  {
+    title: 'Observabilidad avanzada',
+    description:
+      'Evolucionar los patrones de monitoreo y orquestación actuales hacia observabilidad completa con métricas, alertas y dashboards.',
+  },
+  {
+    title: 'Soluciones de Alto Impacto',
+    description:
+      'Construir herramientas que transformen la operación, generen métricas reales y escalen con el crecimiento del negocio.',
+  },
+]
+
 export const CONTACT = {
-  headline: 'Conversemos sobre automatización, desarrollo o mejora de procesos',
+  headline: 'Busco desafíos donde la automatización genere impacto real',
   description:
-    'Disponible para oportunidades desafiantes donde pueda aportar valor real. Abierto a colaborar en soluciones tecnológicas de alto impacto.',
+    'Si necesitas automatizar procesos, integrar datos, reducir trabajo manual o construir herramientas que mejoren la operación — conversemos. Disponible para oportunidades técnicas, freelance o colaboración profesional.',
   links: {
     email: 'jose.nicolas.candia@gmail.com',
     linkedin: 'https://www.linkedin.com/in/jose-candia-orostegui-a7861913a/',

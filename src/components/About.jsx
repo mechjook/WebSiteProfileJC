@@ -16,32 +16,42 @@ export default function About() {
     <SectionWrapper id="about">
       <SectionTitle
         title="Sobre Mí"
-        subtitle="Automatización con criterio, desarrollo con propósito"
+        subtitle="Qué tipo de profesional soy y cómo aporto valor"
       />
 
       <div className="max-w-3xl mx-auto">
-        {/* Accent sidebar with content */}
-        <div className="relative pl-6 border-l-2 border-accent-400/20">
-          {/* Glowing dot at top of sidebar */}
+        {/* Lead summary */}
+        <div className="relative pl-6 border-l-2 border-accent-400/20 mb-10">
           <div className="absolute -left-[5px] top-0 w-2 h-2 rounded-full bg-accent-400 shadow-[0_0_8px_rgba(56,189,248,0.4)]" />
-
-          <div className="space-y-6">
-            {ABOUT.paragraphs.map((p, i) => (
-              <motion.p
-                key={i}
-                initial={{ opacity: 0, x: -10 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, margin: '-40px' }}
-                transition={{ duration: 0.5, delay: i * 0.15 }}
-                className="text-gray-300 leading-relaxed text-lg"
-              >
-                {p}
-              </motion.p>
-            ))}
-          </div>
-
-          {/* Glowing dot at bottom of sidebar */}
+          <motion.p
+            initial={{ opacity: 0, x: -10 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: '-40px' }}
+            transition={{ duration: 0.5 }}
+            className="text-gray-300 leading-relaxed text-lg"
+          >
+            {ABOUT.summary}
+          </motion.p>
           <div className="absolute -left-[5px] bottom-0 w-2 h-2 rounded-full bg-accent-400/40" />
+        </div>
+
+        {/* Value highlights grid */}
+        <div className="grid sm:grid-cols-2 gap-4 mb-10">
+          {ABOUT.highlights.map((item, i) => (
+            <motion.div
+              key={item.title}
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-40px' }}
+              transition={{ duration: 0.4, delay: i * 0.1 }}
+              className="card-base p-5 hover:border-accent-400/20 transition-all duration-300 group"
+            >
+              <h3 className="text-sm font-semibold text-white mb-2 group-hover:text-accent-400 transition-colors">
+                {item.title}
+              </h3>
+              <p className="text-xs text-gray-400 leading-relaxed">{item.description}</p>
+            </motion.div>
+          ))}
         </div>
 
         {/* Trait badges */}
@@ -50,7 +60,7 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-40px' }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className="mt-10 flex flex-wrap justify-center gap-3"
+          className="flex flex-wrap justify-center gap-3"
         >
           {TRAITS.map((trait, i) => (
             <motion.span

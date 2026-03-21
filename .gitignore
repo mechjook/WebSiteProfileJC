@@ -9,3 +9,4 @@ dist-portable
 *.log
 .DS_Store
 .vscode
+CLAUDE.md
