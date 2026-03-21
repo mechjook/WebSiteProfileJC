@@ -8,6 +8,7 @@ import Stack from './components/Stack'
 import Strengths from './components/Strengths'
 import Projects from './components/Projects'
 import Methodology from './components/Methodology'
+import Education from './components/Education'
 import Vision from './components/Vision'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
@@ -27,6 +28,7 @@ export default function App() {
           <Strengths />
           <Projects />
           <Methodology />
+          <Education />
           <Vision />
           <Contact />
         </main>

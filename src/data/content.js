@@ -7,6 +7,7 @@ export const NAV_LINKS = [
   { label: 'Fortalezas', href: '#strengths' },
   { label: 'Proyectos', href: '#projects' },
   { label: 'Metodología', href: '#methodology' },
+  { label: 'Formación', href: '#education' },
   { label: 'Visión', href: '#vision' },
   { label: 'Contacto', href: '#contact' },
 ]
@@ -254,6 +255,52 @@ export const VISION_ITEMS = [
     description:
       'Construir herramientas que transformen la operación, generen métricas reales y escalen con el crecimiento del negocio.',
   },
+]
+
+export const EDUCATION = [
+  {
+    type: 'magister',
+    title: 'Magíster en Ingeniería Informática',
+    institution: 'Universidad Andrés Bello',
+  },
+  {
+    type: 'titulo',
+    title: 'Ingeniería de Ejecución Informática mención Desarrollo de Sistemas',
+    institution: 'Instituto Profesional AIEP, Universidad Andrés Bello',
+  },
+  {
+    type: 'titulo',
+    title: 'Programación y Análisis de Sistemas',
+    institution: 'Instituto Profesional AIEP, Universidad Andrés Bello',
+  },
+]
+
+export const DIPLOMAS = [
+  {
+    title: 'Red Team (Ciberseguridad)',
+    institution: 'USACH',
+  },
+  {
+    title: 'Ingeniería de Sistemas Empresariales',
+    institution: 'UNAB',
+  },
+  {
+    title: 'Gestión TI',
+    institution: 'UNAB',
+  },
+  {
+    title: 'Estrategias de TI',
+    institution: 'UNAB',
+  },
+]
+
+export const CERTIFICATIONS = [
+  'AZ900: Azure Fundamentals',
+  'Pentest Web — Del escaneo al Exploit',
+  'Reversing & Exploiting',
+  'Técnicas en Función de los Escenarios',
+  'Iniciándonos en Ethical Hacking y Pentesting',
+  'Nivelación para Red Team',
 ]
 
 export const CONTACT = {
