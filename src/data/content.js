@@ -121,6 +121,16 @@ export const PROJECTS = [
       'Pipeline ejecuta en menos de 2 segundos. 43 indicadores monitoreados con 26 semanas de historial. Dashboard con 5 secciones interactivas, sparklines de tendencia y filtros. 67 tests automatizados. Scraping semanal automático con deploy continuo.',
   },
   {
+    title: 'API de Validación Tributaria — Chile',
+    problem:
+      'Los cálculos tributarios chilenos (validación de RUT, IVA, retención de honorarios, topes imponibles, declaración F29) requieren conocimiento especializado de normativa vigente y se realizan manualmente con planillas propensas a errores.',
+    solution:
+      'Construí un microservicio REST con FastAPI que expone 11 endpoints documentados con Swagger para validación y cálculo tributario. Incluye módulos puros de lógica tributaria (RUT módulo 11, IVA 19%, retención 2024-2027, cotizaciones AFP/salud/AFC, F29 simplificado), modelos Pydantic validados, Dockerfile y demo HTML interactiva con formularios funcionales desplegada en GitHub Pages.',
+    technologies: ['Python', 'FastAPI', 'Pydantic', 'pytest', 'httpx', 'Docker', 'GitHub Actions', 'GitHub Pages'],
+    impact:
+      '11 endpoints REST documentados con Swagger. 56 tests (unitarios + integración). 5 dominios tributarios implementados. Demo interactiva con formularios que replican la lógica de la API. Deploy continuo a GitHub Pages.',
+  },
+  {
     title: 'Detector de Anomalías Financieras — Dashboard Interactivo',
     problem:
       'La detección de transacciones sospechosas en datos financieros requiere analizar miles de operaciones simultáneamente, considerando múltiples variables (montos, horarios, frecuencias, destinatarios), algo inviable de forma manual y propenso a errores humanos.',
@@ -182,6 +192,12 @@ export const IMPACT_METRICS = [
 ]
 
 export const GITHUB_REPOS = [
+  {
+    name: 'DemostrationTaxAPI',
+    description: 'API REST de validación tributaria chilena (RUT, IVA, honorarios, topes, F29) con FastAPI, Swagger, Docker y demo interactiva.',
+    technologies: ['Python', 'FastAPI', 'Pydantic', 'Docker'],
+    link: 'https://mechjook.github.io/DemostrationTaxAPI/',
+  },
   {
     name: 'DemostrationAnomalyDetector',
     description: 'Detector de anomalías financieras con Z-Score, IQR e Isolation Forest, dashboard interactivo Chart.js y deploy automático a GitHub Pages.',
