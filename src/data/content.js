@@ -121,6 +121,16 @@ export const PROJECTS = [
       'Pipeline ejecuta en menos de 2 segundos. 43 indicadores monitoreados con 26 semanas de historial. Dashboard con 5 secciones interactivas, sparklines de tendencia y filtros. 67 tests automatizados. Scraping semanal automático con deploy continuo.',
   },
   {
+    title: 'Detector de Anomalías Financieras — Dashboard Interactivo',
+    problem:
+      'La detección de transacciones sospechosas en datos financieros requiere analizar miles de operaciones simultáneamente, considerando múltiples variables (montos, horarios, frecuencias, destinatarios), algo inviable de forma manual y propenso a errores humanos.',
+    solution:
+      'Construí un sistema de detección de anomalías en Python con 6 etapas automatizadas: generación de ~5.000 transacciones sintéticas con 6 tipos de anomalías inyectadas, validación de integridad, detección con 3 métodos (Z-Score, IQR e Isolation Forest), clasificación de riesgo (bajo/medio/alto/crítico), reportes CSV y dashboard HTML interactivo con Chart.js. El dashboard incluye scatter plot, heatmap hora×día, distribuciones, timeline mensual y tabla de alertas filtrable. CI/CD con GitHub Actions ejecuta tests, pipeline y despliega en GitHub Pages.',
+    technologies: ['Python', 'scikit-learn', 'pandas', 'Chart.js', 'GitHub Actions', 'GitHub Pages', 'pytest'],
+    impact:
+      'Pipeline ejecuta en menos de 2 segundos. Precision 83% y F1-Score 57% sobre anomalías conocidas. Dashboard con 7 secciones interactivas, heatmap de patrones temporales y contexto explicativo. 33 tests automatizados. Deploy continuo a GitHub Pages.',
+  },
+  {
     title: 'Herramientas internas de productividad',
     problem:
       'Equipos operativos dedicaban tiempo significativo a tareas repetitivas que podían estandarizarse y automatizarse con herramientas simples.',
@@ -173,6 +183,24 @@ export const IMPACT_METRICS = [
 
 export const GITHUB_REPOS = [
   {
+    name: 'DemostrationAnomalyDetector',
+    description: 'Detector de anomalías financieras con Z-Score, IQR e Isolation Forest, dashboard interactivo Chart.js y deploy automático a GitHub Pages.',
+    technologies: ['Python', 'scikit-learn', 'Chart.js', 'GitHub Actions'],
+    link: 'https://mechjook.github.io/DemostrationAnomalyDetector/',
+  },
+  {
+    name: 'DemostrationScraper',
+    description: 'Web Scraper de indicadores previsionales de Chile con dashboard interactivo Chart.js y deploy automático a GitHub Pages.',
+    technologies: ['Python', 'BeautifulSoup', 'Chart.js', 'GitHub Actions'],
+    link: 'https://mechjook.github.io/DemostrationScraper/',
+  },
+  {
+    name: 'DemostrationETL',
+    description: 'Pipeline ETL de conciliación bancaria con dashboard interactivo Chart.js y deploy automático a GitHub Pages.',
+    technologies: ['Python', 'pandas', 'Chart.js', 'GitHub Actions'],
+    link: 'https://mechjook.github.io/DemostrationETL/',
+  },
+  {
     name: 'ExtractorSII-F29',
     description: 'Bot RPA que automatiza la extracción del Formulario 29 desde el portal del SII para múltiples contribuyentes.',
     technologies: ['Python', 'Selenium', 'tkinter'],
@@ -186,18 +214,6 @@ export const GITHUB_REPOS = [
     name: 'Proyecto_piloto_contable',
     description: 'Flujo maestro de 7 etapas para validación y consolidación diaria de subsidiarios contables.',
     technologies: ['Python', 'SQLAlchemy', 'openpyxl'],
-  },
-  {
-    name: 'DemostrationETL',
-    description: 'Pipeline ETL de conciliación bancaria con dashboard interactivo Chart.js y deploy automático a GitHub Pages.',
-    technologies: ['Python', 'pandas', 'Chart.js', 'GitHub Actions'],
-    link: 'https://mechjook.github.io/DemostrationETL/',
-  },
-  {
-    name: 'DemostrationScraper',
-    description: 'Web Scraper de indicadores previsionales de Chile con dashboard interactivo Chart.js y deploy automático a GitHub Pages.',
-    technologies: ['Python', 'BeautifulSoup', 'Chart.js', 'GitHub Actions'],
-    link: 'https://mechjook.github.io/DemostrationScraper/',
   },
   {
     name: 'Robocorp_Auto_SII-F29_Scrap',
