@@ -111,6 +111,16 @@ export const PROJECTS = [
       'Pipeline ejecuta en menos de 2 segundos. Dashboard interactivo con gráficos, tablas filtrables/ordenables, búsqueda en tiempo real y navegación por secciones. 17 tests automatizados. Deploy continuo a GitHub Pages.',
   },
   {
+    title: 'Web Scraper Indicadores Previsionales — Dashboard Interactivo',
+    problem:
+      'Los indicadores económicos y previsionales de Chile (UF, dólar, UTM, tasas AFP, topes imponibles) cambian constantemente y consultarlos manualmente en Previred no permite visualizar tendencias ni variaciones históricas.',
+    solution:
+      'Construí un Web Scraper automatizado en Python con 7 etapas: extracción desde Previred con reintentos, parsing de formatos chilenos ($1.234.567, 11,44%), almacenamiento como serie temporal en CSV, cálculo de variaciones y tendencias, validación de integridad y dashboard HTML interactivo con Chart.js. Incluye sparklines en KPIs, gráficos de evolución temporal y tabla resumen agrupada por sección. CI/CD con GitHub Actions ejecuta el scraper semanalmente y despliega en GitHub Pages.',
+    technologies: ['Python', 'BeautifulSoup', 'pandas', 'Chart.js', 'GitHub Actions', 'GitHub Pages', 'pytest'],
+    impact:
+      'Pipeline ejecuta en menos de 2 segundos. 43 indicadores monitoreados con 26 semanas de historial. Dashboard con 5 secciones interactivas, sparklines de tendencia y filtros. 67 tests automatizados. Scraping semanal automático con deploy continuo.',
+  },
+  {
     title: 'Herramientas internas de productividad',
     problem:
       'Equipos operativos dedicaban tiempo significativo a tareas repetitivas que podían estandarizarse y automatizarse con herramientas simples.',
@@ -182,6 +192,12 @@ export const GITHUB_REPOS = [
     description: 'Pipeline ETL de conciliación bancaria con dashboard interactivo Chart.js y deploy automático a GitHub Pages.',
     technologies: ['Python', 'pandas', 'Chart.js', 'GitHub Actions'],
     link: 'https://mechjook.github.io/DemostrationETL/',
+  },
+  {
+    name: 'DemostrationScraper',
+    description: 'Web Scraper de indicadores previsionales de Chile con dashboard interactivo Chart.js y deploy automático a GitHub Pages.',
+    technologies: ['Python', 'BeautifulSoup', 'Chart.js', 'GitHub Actions'],
+    link: 'https://mechjook.github.io/DemostrationScraper/',
   },
   {
     name: 'Robocorp_Auto_SII-F29_Scrap',
