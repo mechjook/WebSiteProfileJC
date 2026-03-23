@@ -1,6 +1,7 @@
 export const NAV_LINKS = [
   { label: 'Inicio', href: '#hero' },
   { label: 'Sobre mí', href: '#about' },
+  { label: 'Experiencia', href: '#experience' },
   { label: 'Stack', href: '#stack' },
   { label: 'Proyectos', href: '#projects' },
   { label: 'Impacto', href: '#impact' },
@@ -13,49 +14,49 @@ export const NAV_LINKS = [
 
 export const HERO = {
   name: 'José Nicolás Candia',
-  title: 'Automation Developer | RPA, Python, ETL & Process Optimization',
+  title: 'Ingeniero Informático | Python, SQL, Automatización & Procesamiento de Datos',
   subtitles: [
-    'Reduzco horas manuales con automatización inteligente',
+    'Automatizo procesos críticos con Python y SQL',
+    'Proceso y valido grandes volúmenes de datos a escala',
     'Conecto datos, procesos y tecnología en soluciones robustas',
-    'Transformo operaciones manuales en flujos auditables',
-    'Construyo herramientas que la operación necesita',
+    'Construyo soluciones que la operación necesita',
   ],
-  tagline: 'Diseño soluciones que eliminan trabajo manual, reducen errores y escalan con el negocio.',
+  tagline: '+8 años de experiencia en entornos corporativos — automatización, integración de datos y desarrollo de soluciones con impacto real.',
   description:
-    'Automatizo procesos críticos, integro fuentes de datos y construyo herramientas internas que generan impacto real — con foco en eficiencia, trazabilidad y robustez operativa.',
+    'Especializado en automatización de procesos, desarrollo con Python, procesamiento de datos masivos e integración de información en contextos de alta exigencia operacional.',
 }
 
 export const ABOUT = {
   summary:
-    'Soy un desarrollador especializado en automatización de procesos, integración de datos y construcción de herramientas operativas. Mi trabajo se centra en resolver problemas reales: eliminar tareas manuales repetitivas, reducir errores en procesos críticos y crear soluciones que conecten reglas de negocio con ejecución técnica.',
+    'Ingeniero en Informática con más de 8 años de experiencia en entornos corporativos, especializado en automatización de procesos, desarrollo de soluciones con Python, integración de datos y análisis de información en contextos de alta exigencia operacional. He participado en proyectos para empresas del sector financiero, retail y consumo masivo, aportando en optimización de procesos, certificación contable, automatización operativa e integración de datos.',
   highlights: [
     {
-      title: 'Resuelvo problemas de operación',
+      title: 'Automatización y desarrollo con Python',
       description:
-        'Identifico cuellos de botella, procesos frágiles y tareas repetitivas. Diseño automatizaciones que los eliminan de raíz, no parches temporales.',
+        'Más de 4 años de experiencia directa en automatización, RPA, ETL y procesamiento de datos. Desarrollo soluciones robustas que eliminan tareas manuales y reducen errores en procesos críticos.',
     },
     {
-      title: 'Combino negocio y tecnología',
+      title: 'Procesamiento de datos a escala',
       description:
-        'Entiendo las reglas contables, tributarias y financieras antes de escribir código. Eso me permite construir soluciones que realmente calzan con la operación.',
+        'Fortaleciendo mi perfil en manejo de grandes volúmenes de datos con Python, SQL Server Management Studio y AWS Athena para análisis, transformación, validación y explotación de información.',
     },
     {
-      title: 'Construyo para que dure',
+      title: 'Experiencia corporativa comprobada',
       description:
-        'Mis soluciones incluyen validaciones, manejo de errores, trazabilidad y reanudación automática. No solo funcionan — son mantenibles, auditables y resilientes.',
+        'Participación en proyectos para BancoEstado, Cencosud Scotiabank, ACL Tecnología, Getronics y Carozzi — desde certificación contable hasta soporte de plataformas empresariales.',
     },
     {
-      title: 'Aprendo rápido, ejecuto con criterio',
+      title: 'Visión técnica orientada a resultados',
       description:
-        'Analizo antes de actuar. Cuando tengo claridad, ejecuto con decisión. Me adapto a herramientas nuevas, contextos distintos y presión operativa.',
+        'Combino experiencia práctica en procesos corporativos con un enfoque técnico centrado en trazabilidad, eficiencia y calidad de datos.',
     },
   ],
 }
 
 export const STACK = {
-  'Automatización': ['UiPath', 'Selenium', 'Robocorp', 'Playwright', 'Power Automate'],
-  'Lenguajes': ['Python', 'JavaScript', 'SQL', 'Regex'],
-  'Datos e integración': ['pandas', 'openpyxl', 'SQLAlchemy', 'PostgreSQL', 'SQL Server', 'Athena', 'APIs REST'],
+  'Lenguajes y desarrollo': ['Python', 'SQL', 'JavaScript', 'Regex'],
+  'Datos y análisis': ['SQL Server Management Studio', 'AWS Athena', 'PostgreSQL', 'pandas', 'openpyxl', 'SQLAlchemy', 'APIs REST'],
+  'Automatización y ETL': ['UiPath', 'Pentaho PDI', 'Selenium', 'Robocorp', 'Playwright', 'Power Automate'],
   'Dev / Herramientas': ['Git', 'GitHub', 'Docker', 'GitHub Actions', 'PyInstaller', 'Excel Avanzado'],
 }
 
@@ -238,6 +239,63 @@ export const GITHUB_REPOS = [
   },
 ]
 
+export const EXPERIENCE_TIMELINE = [
+  {
+    role: 'Programmer Analyst',
+    company: 'Getronics',
+    client: 'BancoEstado',
+    period: 'septiembre 2025 — Actualidad',
+    location: 'Región Metropolitana, Chile',
+    description:
+      'Desarrollo de automatizaciones, procesamiento de información y análisis de datos masivos para procesos de certificación contable y operación productiva.',
+    responsibilities: [
+      'Desarrollo de soluciones con Python para automatización y validación de procesos',
+      'Procesamiento, depuración y análisis de grandes volúmenes de datos',
+      'Construcción de consultas y validaciones con SQL sobre información operacional y contable',
+      'Carga, migración y administración de datos en entornos productivos',
+      'Apoyo en levantamiento funcional, historias de usuario y documentación de procesos',
+    ],
+    technologies: ['Python', 'SQL', 'Procesamiento de Datos', 'Análisis de Datos', 'Automatización'],
+    current: true,
+  },
+  {
+    role: 'Desarrollador RPA / Analista Programador Sr',
+    company: 'ACL Tecnología',
+    client: 'Cencosud Scotiabank',
+    period: 'noviembre 2021 — febrero 2025',
+    location: 'Región Metropolitana, Chile',
+    description:
+      'Desarrollo de soluciones de automatización y flujos ETL para procesos internos, con foco en continuidad operativa, monitoreo y estabilidad de procesos productivos.',
+    responsibilities: [
+      'Desarrollo de soluciones RPA para procesos de negocio',
+      'Implementación de flujos ETL para tratamiento e integración de datos',
+      'Uso de UiPath ReFramework para automatizaciones robustas y mantenibles',
+      'Desarrollo de procesos con Pentaho PDI',
+      'Monitoreo, soporte y orquestación de procesos automatizados en producción',
+    ],
+    technologies: ['UiPath', 'ReFramework', 'Pentaho PDI', 'ETL', 'Automatización'],
+    current: false,
+  },
+  {
+    role: 'Soporte TI',
+    company: 'Empresas Carozzi S.A.',
+    client: null,
+    period: 'junio 2017 — junio 2021',
+    location: 'Nos, Chile',
+    description:
+      'Ejecución, planificación y resolución de incidentes generados por usuarios y sistemas, participando en proyectos de implementación y administración de plataformas corporativas críticas.',
+    responsibilities: [
+      'Atención y resolución de incidentes técnicos para usuarios y sistemas',
+      'Participación en proyectos de implementación tecnológica',
+      'Gestión de herramientas como CrowdStrike, System Center, SAP, Office 365, Azure y servicios Cloud',
+      'Análisis de plataformas OT y concientización en ciberseguridad',
+      'Monitoreo de amenazas mediante plataformas de administración y seguridad',
+    ],
+    technologies: ['Office 365', 'Azure', 'SAP', 'System Center', 'Cloud', 'Ciberseguridad'],
+    current: false,
+  },
+]
+
 export const METHODOLOGY_STEPS = [
   {
     step: '01',
@@ -319,41 +377,41 @@ export const CERTIFICATIONS = [
 
 export const VISION_ITEMS = [
   {
-    title: 'Arquitectura de Soluciones',
+    title: 'Desarrollo con Python a escala',
     description:
-      'Diseñar ecosistemas de automatización completos que conecten procesos, datos y tecnología a nivel organizacional.',
+      'Consolidar un perfil técnico robusto en desarrollo de soluciones con Python para automatización, validación y tratamiento de información a escala.',
   },
   {
-    title: 'Liderazgo Técnico',
+    title: 'Procesamiento de datos masivos',
     description:
-      'Guiar equipos de desarrollo y automatización con criterio técnico, buenas prácticas y visión de largo plazo.',
+      'Profundizar en análisis, transformación y explotación de grandes volúmenes de datos con Python, SQL Server Management Studio y AWS Athena.',
   },
   {
-    title: 'Automatización Inteligente',
+    title: 'Automatización inteligente',
     description:
-      'Incorporar IA aplicada, clasificación de documentos y agentes técnicos para llevar la automatización al siguiente nivel.',
+      'Llevar la automatización al siguiente nivel incorporando IA aplicada, clasificación de documentos y agentes técnicos.',
   },
   {
-    title: 'Gestión de Proyectos',
+    title: 'Integración y calidad de datos',
     description:
-      'Liderar iniciativas tecnológicas de punta a punta, conectando negocio, operación y tecnología de forma efectiva.',
+      'Diseñar flujos de integración robustos que garanticen trazabilidad, consistencia y confiabilidad de la información en entornos productivos.',
   },
   {
-    title: 'Observabilidad avanzada',
+    title: 'Liderazgo técnico',
     description:
-      'Evolucionar los patrones de monitoreo y orquestación actuales hacia observabilidad completa con métricas, alertas y dashboards.',
+      'Guiar equipos de desarrollo y automatización con criterio técnico, buenas prácticas y visión orientada a resultados.',
   },
   {
-    title: 'Soluciones de Alto Impacto',
+    title: 'Soluciones de alto impacto',
     description:
-      'Construir herramientas que transformen la operación, generen métricas reales y escalen con el crecimiento del negocio.',
+      'Construir herramientas que transformen la operación, contribuyendo a la eficiencia, trazabilidad y confiabilidad de los procesos.',
   },
 ]
 
 export const CONTACT = {
-  headline: 'Busco desafíos donde la automatización genere impacto real',
+  headline: 'Busco desafíos donde la automatización y los datos generen impacto real',
   description:
-    'Si necesitas automatizar procesos, integrar datos, reducir trabajo manual o construir herramientas que mejoren la operación — conversemos. Disponible para oportunidades técnicas, freelance o colaboración profesional.',
+    'Si necesitas automatizar procesos, procesar datos a escala, integrar información o construir soluciones que mejoren la operación — conversemos. Disponible para oportunidades técnicas, freelance o colaboración profesional.',
   links: {
     email: 'jose.nicolas.candia@gmail.com',
     linkedin: 'https://www.linkedin.com/in/jose-candia-orostegui-a7861913a/',
