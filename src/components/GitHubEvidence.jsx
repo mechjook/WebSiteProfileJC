@@ -1,4 +1,5 @@
-import { motion } from 'framer-motion'
+import { useState } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 import SectionWrapper from './SectionWrapper'
 import SectionTitle from './SectionTitle'
 import { GITHUB_REPOS, CONTACT } from '../data/content'
@@ -13,6 +14,37 @@ function GitHubIcon({ className }) {
     >
       <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.338c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2Z" />
     </svg>
+  )
+}
+
+function PrivateBadge({ reason }) {
+  const [show, setShow] = useState(false)
+
+  return (
+    <div className="absolute top-3 right-3 z-10">
+      <button
+        onClick={() => setShow(!show)}
+        onMouseEnter={() => setShow(true)}
+        onMouseLeave={() => setShow(false)}
+        className="px-2.5 py-0.5 text-[11px] font-semibold tracking-wide uppercase border border-amber-400/50 text-amber-400 bg-amber-400/10 rounded-md cursor-pointer select-none transition-all duration-200 hover:bg-amber-400/20 hover:border-amber-400/70"
+      >
+        Privado
+      </button>
+      <AnimatePresence>
+        {show && (
+          <motion.div
+            initial={{ opacity: 0, y: -4, scale: 0.95 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: -4, scale: 0.95 }}
+            transition={{ duration: 0.15 }}
+            className="absolute top-full right-0 mt-2 w-56 p-3 text-xs leading-relaxed text-gray-300 bg-gray-800 border border-amber-400/30 rounded-lg shadow-lg shadow-black/30"
+          >
+            <div className="absolute -top-1.5 right-4 w-3 h-3 bg-gray-800 border-l border-t border-amber-400/30 rotate-45" />
+            {reason}
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
   )
 }
 
@@ -39,6 +71,9 @@ export default function GitHubEvidence() {
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className="relative card-base p-6 hover:border-accent-400/20 transition-all duration-300 group flex flex-col overflow-hidden hover:shadow-[0_0_20px_rgba(34,211,238,0.08),0_0_40px_rgba(34,211,238,0.04)]"
             >
+              {/* Private badge */}
+              {repo.private && <PrivateBadge reason={repo.privateReason} />}
+
               {/* Gradient top-border accent on hover */}
               <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-accent-400 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 

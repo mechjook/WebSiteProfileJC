@@ -221,21 +221,29 @@ export const GITHUB_REPOS = [
     name: 'ExtractorSII-F29',
     description: 'Bot RPA que automatiza la extracción del Formulario 29 desde el portal del SII para múltiples contribuyentes.',
     technologies: ['Python', 'Selenium', 'tkinter'],
+    private: true,
+    privateReason: 'Repositorio privado por contener trazas de datos sensibles de entornos corporativos reales.',
   },
   {
     name: 'Prod_ContableBECH',
     description: 'Pipeline ETL para procesamiento masivo de datos de producción y generación de contabilidad automática.',
     technologies: ['Python', 'PostgreSQL', 'PLpgSQL'],
+    private: true,
+    privateReason: 'Repositorio privado por contener trazas de datos sensibles de entornos corporativos reales.',
   },
   {
     name: 'Proyecto_piloto_contable',
     description: 'Flujo maestro de 7 etapas para validación y consolidación diaria de subsidiarios contables.',
     technologies: ['Python', 'SQLAlchemy', 'openpyxl'],
+    private: true,
+    privateReason: 'Repositorio privado por contener trazas de datos sensibles de entornos corporativos reales.',
   },
   {
     name: 'Robocorp_Auto_SII-F29_Scrap',
     description: 'Scraping tributario con framework Robocorp y almacenamiento en Google Sheets/Drive.',
     technologies: ['Python', 'Playwright', 'Google APIs'],
+    private: true,
+    privateReason: 'Repositorio privado por contener trazas de datos sensibles de entornos corporativos reales.',
   },
 ]
 
