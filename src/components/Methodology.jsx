@@ -4,14 +4,14 @@ import SectionTitle from './SectionTitle'
 import { METHODOLOGY_STEPS } from '../data/content'
 
 const pulseVariants = {
-  hidden: { scale: 0.8, opacity: 0, boxShadow: '0 0 0px rgba(34,211,238,0)' },
+  hidden: { scale: 0.8, opacity: 0, boxShadow: '0 0 0px rgba(74,222,128,0)' },
   visible: {
     scale: 1,
     opacity: 1,
     boxShadow: [
-      '0 0 0px rgba(34,211,238,0)',
-      '0 0 18px rgba(34,211,238,0.35)',
-      '0 0 6px rgba(34,211,238,0.12)',
+      '0 0 0px rgba(74,222,128,0)',
+      '0 0 18px rgba(74,222,128,0.35)',
+      '0 0 6px rgba(74,222,128,0.12)',
     ],
     transition: {
       scale: { duration: 0.4, ease: 'easeOut' },
@@ -51,7 +51,7 @@ export default function Methodology() {
               {/* Content */}
               <div className={`flex-1 ${i % 2 === 0 ? 'md:text-right' : 'md:text-left'}`}>
                 <div
-                  className={`card-base p-6 inline-block relative overflow-hidden transition-all duration-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.08)] hover:border-accent-400/20 ${
+                  className={`card-base p-6 inline-block relative overflow-hidden transition-all duration-300 hover:shadow-[0_0_20px_rgba(74,222,128,0.08)] hover:border-accent-400/20 ${
                     i % 2 === 0 ? 'md:ml-auto' : 'md:mr-auto'
                   }`}
                 >

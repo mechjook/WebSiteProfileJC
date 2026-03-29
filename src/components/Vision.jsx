@@ -32,7 +32,7 @@ export default function Vision() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-60px' }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="relative p-6 rounded-2xl border border-navy-600/30 bg-gradient-to-b from-navy-800/40 to-transparent hover:border-accent-400/20 transition-all duration-300 group hover:shadow-[0_0_20px_rgba(34,211,238,0.08)] overflow-hidden"
+              className="relative p-6 rounded-2xl border border-navy-600/30 bg-gradient-to-b from-navy-800/40 to-transparent hover:border-accent-400/20 transition-all duration-300 group hover:shadow-[0_0_20px_rgba(74,222,128,0.08)] overflow-hidden"
             >
               {/* Top gradient line - animates wider on hover */}
               <div className="absolute top-0 left-6 w-8 h-0.5 bg-gradient-to-r from-accent-400/60 to-transparent group-hover:w-20 transition-all duration-500 ease-out" />

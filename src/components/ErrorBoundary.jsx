@@ -15,7 +15,7 @@ export default class ErrorBoundary extends Component {
       return (
         <div className="min-h-screen bg-navy-900 flex items-center justify-center px-4">
           <div className="text-center">
-            <h1 className="text-4xl font-bold text-white mb-4">Algo salió mal</h1>
+            <h1 className="text-4xl font-bold font-heading text-white mb-4">Algo salió mal</h1>
             <p className="text-gray-400 mb-8">Ocurrió un error inesperado.</p>
             <button
               onClick={() => window.location.reload()}

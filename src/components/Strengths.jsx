@@ -19,7 +19,7 @@ export default function Strengths() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, margin: '-40px' }}
             transition={{ duration: 0.4, delay: i * 0.05 }}
-            className="group relative p-5 rounded-xl border border-navy-600/30 hover:border-accent-400/20 bg-navy-800/30 hover:bg-navy-800/50 transition-all duration-300 hover:shadow-[0_0_16px_rgba(34,211,238,0.06)]"
+            className="group relative p-5 rounded-xl border border-navy-600/30 hover:border-accent-400/20 bg-navy-800/30 hover:bg-navy-800/50 transition-all duration-300 hover:shadow-[0_0_16px_rgba(74,222,128,0.06)]"
           >
             {/* Left border accent on hover */}
             <div className="absolute left-0 top-3 bottom-3 w-[2px] bg-accent-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

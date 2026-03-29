@@ -26,7 +26,7 @@ export default function ValueProposition() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-60px' }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="relative card-base p-6 overflow-hidden hover:border-accent-400/20 transition-all duration-300 group hover:shadow-[0_0_20px_rgba(34,211,238,0.08),0_0_40px_rgba(34,211,238,0.04)]"
+              className="relative card-base p-6 overflow-hidden hover:border-accent-400/20 transition-all duration-300 group hover:shadow-[0_0_20px_rgba(74,222,128,0.08),0_0_40px_rgba(74,222,128,0.04)]"
             >
               {/* Gradient top-border accent on hover */}
               <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-accent-400 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

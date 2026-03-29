@@ -17,12 +17,15 @@ export default function Hero() {
       id="hero"
       className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16 overflow-hidden"
     >
+      {/* Aurora gradient background */}
+      <div className="absolute inset-0 aurora-bg" />
+
       {/* Dot grid background */}
       <div
         className="absolute inset-0 opacity-[0.07]"
         style={{
           backgroundImage:
-            'radial-gradient(circle, #38bdf8 1px, transparent 1px)',
+            'radial-gradient(circle, #4ade80 1px, transparent 1px)',
           backgroundSize: '32px 32px',
         }}
       />
@@ -43,7 +46,7 @@ export default function Hero() {
             opacity: [0.03, 0.06, 0.03],
           }}
           transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut' }}
-          className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-blue-600 rounded-full blur-[120px]"
+          className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-emerald-600 rounded-full blur-[120px]"
         />
       </div>
 
@@ -71,7 +74,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6"
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-heading text-white leading-tight mb-6 neon-title"
         >
           {HERO.name}
         </motion.h1>
