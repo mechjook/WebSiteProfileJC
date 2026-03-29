@@ -36,7 +36,7 @@ export default function Experience() {
                   <span
                     className={`relative inline-flex h-4 w-4 rounded-full border-2 ${
                       job.current
-                        ? 'bg-accent-400 border-accent-400 shadow-[0_0_12px_rgba(34,211,238,0.5)]'
+                        ? 'bg-accent-400 border-accent-400 shadow-[0_0_12px_rgba(74,222,128,0.5)]'
                         : 'bg-navy-800 border-accent-400/40'
                     }`}
                   />
@@ -47,7 +47,7 @@ export default function Experience() {
               <div className="hidden lg:block lg:w-1/2" />
 
               {/* Card */}
-              <div className="ml-12 lg:ml-0 lg:w-1/2 card-base p-6 hover:border-accent-400/20 transition-all duration-300 group hover:shadow-[0_0_20px_rgba(34,211,238,0.08)]">
+              <div className="ml-12 lg:ml-0 lg:w-1/2 card-base p-6 hover:border-accent-400/20 transition-all duration-300 group hover:shadow-[0_0_20px_rgba(74,222,128,0.08)]">
                 {/* Header */}
                 <div className="flex items-start justify-between gap-3 mb-3">
                   <div>

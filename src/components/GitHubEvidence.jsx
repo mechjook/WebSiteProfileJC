@@ -69,7 +69,7 @@ export default function GitHubEvidence() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-60px' }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="relative card-base p-6 hover:border-accent-400/20 transition-all duration-300 group flex flex-col overflow-hidden hover:shadow-[0_0_20px_rgba(34,211,238,0.08),0_0_40px_rgba(34,211,238,0.04)]"
+              className="relative card-base p-6 hover:border-accent-400/20 transition-all duration-300 group flex flex-col overflow-hidden hover:shadow-[0_0_20px_rgba(74,222,128,0.08),0_0_40px_rgba(74,222,128,0.04)]"
             >
               {/* Private badge */}
               {repo.private && <PrivateBadge reason={repo.privateReason} />}
@@ -129,7 +129,7 @@ export default function GitHubEvidence() {
             href={CONTACT.links.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2.5 px-6 py-3 border border-accent-400/30 text-accent-400 rounded-xl font-medium text-sm hover:bg-accent-400/10 hover:border-accent-400/50 hover:shadow-[0_0_20px_rgba(34,211,238,0.1)] transition-all duration-300"
+            className="inline-flex items-center gap-2.5 px-6 py-3 border border-accent-400/30 text-accent-400 rounded-xl font-medium text-sm hover:bg-accent-400/10 hover:border-accent-400/50 hover:shadow-[0_0_20px_rgba(74,222,128,0.1)] transition-all duration-300"
           >
             <GitHubIcon className="w-5 h-5" />
             Ver perfil completo
